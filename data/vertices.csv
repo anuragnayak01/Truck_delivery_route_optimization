@@ -1,0 +1,11 @@
+name,latitude,longitude,mapRow,mapCol,type
+Garage,34.0522,-118.2437,0,0,garage
+RestaurantA,34.0450,-118.2500,1,1,pickup
+RestaurantB,34.0600,-118.2350,2,2,pickup
+RestaurantC,34.0400,-118.2300,3,3,pickup
+OfficeA,34.0550,-118.2600,4,4,dropoff
+OfficeB,34.0650,-118.2400,5,5,dropoff
+OfficeC,34.0500,-118.2200,6,6,dropoff
+ApartmentA,34.0480,-118.2550,7,7,dropoff
+ApartmentB,34.0620,-118.2250,8,8,dropoff
+g++ -std=c++17 -I include src/graph/SampleVertex.cpp src/graph/SampleEdge.cpp src/graph/SamplePositiveGraph.cpp src/graph/SampleNegativeGraph.cpp src/algorithm/SampleDijkstra.cpp src/algorithm/SampleBellmanFord.cpp main.cpp -o delivery_optimizer
